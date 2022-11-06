@@ -15,14 +15,14 @@ The aim of this project is to build a simple java script that will generate rand
  + node.js v19.0.0
 
 ## Setup
- + Please unsure that node.js is installed. If not, my recommendation is to use the [offical website](https://nodejs.org/en/) for download
+ + Please ensure that node.js is installed. If not, my recommendation is to use the [offical website](https://nodejs.org/en/) to download it.
  + In order to download this repository you will need to 'clone' it.
  
  + Using git bash please navigate to directory where you want to download these files:
  ```
  $ cd yourDirectory
  ```
- + Or create a new direcotry using mkdir:
+ + Or create a new directory using mkdir:
  ```
  $ mkdir yourDirectory
  $ cd yourDirectory
@@ -35,7 +35,7 @@ The aim of this project is to build a simple java script that will generate rand
  ```
  $ cd MixxedMessages
  ```
- + And then just run the code:
+ + And then just run the code through:
  ```
  $ node randomWesterosiQuoteGenerator.js
  ```
