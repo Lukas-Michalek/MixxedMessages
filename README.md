@@ -15,8 +15,8 @@ The aim of this project is to build a simple java script that will generate rand
  + node.js v19.0.0
 
 ## Setup
- + Please unsure that node.js is installed. If not use my recommendation is to use the [offical website](https://nodejs.org/en/) for download
- + In order to download this repository you will need to 'clone' it
+ + Please unsure that node.js is installed. If not, my recommendation is to use the [offical website](https://nodejs.org/en/) for download
+ + In order to download this repository you will need to 'clone' it.
  
  + Using git bash please navigate to directory where you want to download these files:
  ```
@@ -24,12 +24,20 @@ The aim of this project is to build a simple java script that will generate rand
  ```
  + Or create a new direcotry using mkdir:
  ```
- # mkdir myDirectory
- # cd myDirectory
+ $ mkdir yourDirectory
+ $ cd yourDirectory
  ```
  + When this is accomplished and you are safely inside the directory(folder) where you want to download this repository simply copy this command into yout git bash and the content should download immediately:
  ```
  $ git clone https://github.com/Lukas-Michalek/MixxedMessages.git
+ ```
+ + Then navigate to the MixxedMessages directory
+ ```
+ $ cd MixxedMessages
+ ```
+ + And then just run the code:
+ ```
+ $ node randomWesterosiQuoteGenerator.js
  ```
  ## Project Status
  ***Finished***
@@ -38,8 +46,8 @@ The aim of this project is to build a simple java script that will generate rand
  As a huge fun of Game of Thrones, It was a very natural thing for me to use this as a template for this project.
  
  ## Contact
- Please feel free to contact me through my GitHub profile [Lukas Michalek](https://github.com/Lukas-Michalek) regarding any question or much appreciated feedback.
+ Please feel free to contact me through [my GitHub profile](https://github.com/Lukas-Michalek) regarding any question or much appreciated feedback.
  
  ## Author
- Content created by [Lukas Michalek]https://github.com/Lukas-Michalek
+ Content created by [Lukas Michalek](https://github.com/Lukas-Michalek)
  
