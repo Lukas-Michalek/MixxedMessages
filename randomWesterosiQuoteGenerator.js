@@ -1,7 +1,7 @@
 // Random Quote
 
 
-const blessedBy = ['The Horse God', 'Father', 'Smith', 'Warrior', 'Mother', 'Maiden', 'Crone', 'Stranger', 'The Drowned God', 'The Many-Faced God (also known as the God of Death)', 'The Red God (also known as the Lord of Light)', 'The Old Gods']
+const blessedBy = ['The Horse God', 'Father', 'Smith', 'Warrior', 'Mother', 'Maiden', 'Crone', 'Stranger', 'The Drowned God', 'The Many-Faced God (also known as the God of Death)', 'The Red God (also known as the Lord of Light)', 'The Old Gods'];
 
 const quote = [
     'Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.', 
@@ -18,6 +18,14 @@ const quote = [
     'I don\'t plan on knitting by the fire while men fight for me. I might be small, Lord Glover, and I might be a girl, but I am every bit as much a Northerner as you… and I don\'t need your permission to defend the North.',
     'You know nothing, Jon Snow.',
     'When you play the game of thrones, you win or you die. There is no middle ground.'
-]
+];
 
-const author = ['Tywin Lannister', 'Tyrion Lannister', 'Jaime Lannister', 'Syrio Forel the First Sword of Bravos', 'Ramsay Bolton',  'Sansa Stark', 'Daenerys Targaryen', 'Ned Stark', 'Littlefinger', 'Olenna Tyrell', 'Lyanna Mormont', 'Ygritte', 'Cersei Lannister']
+const author = ['Tywin Lannister', 'Tyrion Lannister', 'Jaime Lannister', 'Syrio Forel the First Sword of Bravos', 'Ramsay Bolton',  'Sansa Stark', 'Daenerys Targaryen', 'Ned Stark', 'Littlefinger', 'Olenna Tyrell', 'Lyanna Mormont', 'Ygritte', 'Cersei Lannister'];
+
+
+// Function will choose a random number from 0 - [number of indexes of requested array] return this number that can be later used to access specific element of that array
+const randomNumberGenerator = arrayLength => {
+
+    return Math.floor(Math.random() * arrayLength);
+
+}
