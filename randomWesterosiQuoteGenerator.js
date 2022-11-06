@@ -16,10 +16,20 @@ const quote = [
     'Tell Cersei. I want her to know it was me.',
     'I don\'t plan on knitting by the fire while men fight for me. I might be small, Lord Glover, and I might be a girl, but I am every bit as much a Northerner as you… and I don\'t need your permission to defend the North.',
     'You know nothing, Jon Snow.',
-    'When you play the game of thrones, you win or you die. There is no middle ground.'
+    'When you play the game of thrones, you win or you die. There is no middle ground.',
+    'If you die before you say her name, I will hunt you through all seven hells.'
 ];
 
-const author = ['Tyrion Lannister', 'Tywin Lannister', 'Jaime Lannister', 'Syrio Forel the First Sword of Bravos', 'Ramsay Bolton',  'Sansa Stark', 'Daenerys Targaryen', 'Ned Stark', 'Littlefinger', 'Olenna Tyrell', 'Lyanna Mormont', 'Ygritte', 'Cersei Lannister'];
+const author = ['Tyrion Lannister', 'Tywin Lannister', 'Jaime Lannister', 'Syrio Forel the First Sword of Bravos', 'Ramsay Bolton',  'Sansa Stark', 'Daenerys Targaryen', 'Ned Stark', 'Littlefinger', 'Olenna Tyrell', 'Lyanna Mormont', 'Ygritte', 'Cersei Lannister','Oberyn Martel'];
+
+const greatHouses = [
+    [['House Baratheon'], ['Ours is the Fury']], 
+    [['House Greyjoy'] , ['We Do Not Sow']], 
+    [['House Martell'] , ['Unbowed, Unbent, Unbroken']], 
+    [['House Stark'] , ['Winter Is Coming']], 
+    [['House Tully'] , ['Family, Duty, Honor']] , 
+    [[['House Tyrell'] , ['Growing Strong']]]
+];
 
 
 // Function will choose a random number from 0 - [number of indexes of requested array] return this number that can be later used to access specific element of that array
@@ -29,21 +39,26 @@ const randomNumberGenerator = arrayLength => {
 
 }
 
-// Function will print out random quotes. Note that in this version It was intended that each quote has its original author. In previous versioun everything(even the author) was randomized.
+// Function will print out random quotes. Note that in this version It was intended that each quote has its original author. In previous versioun everything(even the author) was randomized.`
 const printQuote = () =>{
 
     console.log(`\nToday you are blessed by ${blessedBy[randomNumberGenerator(blessedBy.length)]}\n`);
 
     
-    const index = randomNumberGenerator(quote.length);
+    const quoteIndex = randomNumberGenerator(quote.length);
 
-    console.log(`Your quote of the day is: ${quote[index]}\n`);
-    console.log(`Author of this quote is ${author[index]}\n`);
+    console.log(`Your quote of the day is: ${quote[quoteIndex]}\n`);
+    console.log(`Author of this quote is ${author[quoteIndex]}\n`);
+
+    const greatHouseIndex = randomNumberGenerator(greatHouses.length);
+
+    console.log(`You should really join ${greatHouses[greatHouseIndex][0]} with their words \'${greatHouses[greatHouseIndex][1]}\'`);
 
 }
 
 
 printQuote();
+
 
 
 
